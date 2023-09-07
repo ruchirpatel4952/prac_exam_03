@@ -19,7 +19,7 @@ public:
 
 private:
     char model;
-    float batteryPercentage;
+    double batteryPercentage;
 };
 
 #endif // TESLA_H
