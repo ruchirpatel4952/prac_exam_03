@@ -24,7 +24,7 @@ void Tesla::set_model(char model) {
 
 // Getter for batteryPercentage
 float Tesla::get_batteryPercentage() const {
-    return batteryPercentage;
+    return (float)batteryPercentage;
 }
 
 // Setter for batteryPercentage

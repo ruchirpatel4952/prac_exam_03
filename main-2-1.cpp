@@ -19,7 +19,8 @@ int main() {
     std::cout << "Charged Battery Percentage: " << myTesla.get_batteryPercentage() << "%" << std::endl;
 
     // Drive the Tesla
-    myTesla.drive(50); // Drive for 50 km
+    myTesla.set_emissions(0); // Reset emissions
+    myTesla.drive(40); // Drive for 50 km
     std::cout << "Emissions after driving: " << myTesla.get_emissions() << " g/km" << std::endl;
 
     return 0;
