@@ -1,6 +1,7 @@
 #include <iostream>
-#include "Tesla.h"
 #include <cmath>
+#include "Tesla.h"
+
 
 int main() {
     // Create a Tesla object with a model and price
