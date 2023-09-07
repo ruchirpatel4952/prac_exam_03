@@ -24,7 +24,7 @@ void Ford::set_badgeNumber(int badgeNumber) {
 
 // Getter for litresOfFuel
 float Ford::get_litresOfFuel() const {
-    return (static_cast<double>(static_cast<int>(litresOfFuel * 10)) / 10.0)+0.1;
+    return (static_cast<double>(static_cast<int>(litresOfFuel * 10)) / 10.0);;
 }
 
 // Setter for litresOfFuel
