@@ -53,6 +53,9 @@ void Tesla::drive(int kms) {
     while (kms > 0 && batteryPercentage > 0.0) {
         Car::drive(1); // Update emissions by 1 km
         batteryPercentage -= 1.0 / 5.0; // 1% battery used for every 5 km
+        if (batteryPercentage < 0.0) {
+            batteryPercentage = 0.0; // Ensure battery percentage doesn't go negative
+        }
         kms--;
     }
 }
