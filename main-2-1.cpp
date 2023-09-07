@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Tesla.h"
+#include <iomanip>
 
 int main() {
     // Create a Tesla object with a model and price
@@ -21,7 +22,7 @@ int main() {
     // Drive the Tesla
     myTesla.set_emissions(0); // Reset emissions
     myTesla.drive(40); // Drive for 50 km
-    std::cout << "Emissions after driving: " << myTesla.get_emissions() << " g/km" << std::endl;
+    std::cout << "Emissions after driving: " << std::setprecision(1) <<myTesla.get_emissions() << " g/km" << std::endl;
 
     return 0;
 }
