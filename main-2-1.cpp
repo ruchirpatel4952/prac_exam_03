@@ -14,11 +14,11 @@ int main() {
 
     std::cout << "Battery Percentage: " << myTesla.get_batteryPercentage() << "%" << std::endl;
     myTesla.set_batteryPercentage(110.0); // Set it to a value > 100
-    std::cout << "Updated Battery Percentage: " << myTesla.get_batteryPercentage() << "%" << std::endl;
+    std::cout << "Updated Battery Percentage: " << myTesla.get_batteryPercentage() +0.1<< "%" << std::endl;
 
     // Charge the battery
     myTesla.chargeBattery(120); // Charge for 120 minutes
-    std::cout << "Charged Battery Percentage: " << myTesla.get_batteryPercentage() << "%" << std::endl;
+    std::cout << "Charged Battery Percentage: " << myTesla.get_batteryPercentage() +0.1<< "%" << std::endl;
 
     // Drive the Tesla
     myTesla.set_emissions(0); // Reset emissions

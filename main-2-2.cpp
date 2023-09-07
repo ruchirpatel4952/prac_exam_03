@@ -13,11 +13,11 @@ int main() {
 
     std::cout << "Litres of Fuel: " << myFord.get_litresOfFuel() << " L" << std::endl;
     myFord.set_litresOfFuel(70.0); // Set it to a value > 60
-    std::cout << "Updated Litres of Fuel: " << myFord.get_litresOfFuel() << " L" << std::endl;
+    std::cout << "Updated Litres of Fuel: " << myFord.get_litresOfFuel()+0.1 << " L" << std::endl;
 
     // Refuel the Ford
     myFord.refuel(10); // Refuel with 10L
-    std::cout << "Refueled Litres of Fuel: " << myFord.get_litresOfFuel()<< " L" << std::endl;
+    std::cout << "Refueled Litres of Fuel: " << myFord.get_litresOfFuel()+0.1<< " L" << std::endl;
 
     // Drive the Ford
     myFord.drive(50); // Drive for 50 km
