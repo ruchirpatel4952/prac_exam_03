@@ -51,8 +51,8 @@ void Ford::drive(int kms) {
     while (kms > 0 && litresOfFuel > 0.0) {
         Car::drive(1); // Update emissions by 1 km
         litresOfFuel -= 1.0 / 5.0; // 1L of fuel used for every 5 km
-        if (batteryPercentage < 0.0) {
-            batteryPercentage = 0.0; // Ensure battery percentage doesn't go negative
+        if (litresOfFuel < 0.0) {
+            litresOfFuel = 0.0; // Ensure battery percentage doesn't go negative
         }
         Car::set_emissions(Car::get_emissions() + 234); // Update emissions by 234g per km driven
         kms--;
