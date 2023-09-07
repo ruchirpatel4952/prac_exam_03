@@ -56,6 +56,7 @@ void Tesla::drive(int kms) {
         if (batteryPercentage < 0.0) {
             batteryPercentage = 0.0; // Ensure battery percentage doesn't go negative
         }
+        Car::set_emissions(Car::get_emissions() + 74); // Update emissions by 74g per km driven
         kms--;
     }
 }
