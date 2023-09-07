@@ -17,7 +17,7 @@ int main() {
 
     // Refuel the Ford
     myFord.refuel(10); // Refuel with 10L
-    std::cout << "Refueled Litres of Fuel: " << std::setprecision(1) << myFord.get_litresOfFuel() << " L" << std::endl;
+    std::cout << "Refueled Litres of Fuel: " << std::round(myFord.get_litresOfFuel())<< " L" << std::endl;
 
     // Drive the Ford
     myFord.drive(50); // Drive for 50 km
