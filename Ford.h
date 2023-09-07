@@ -19,7 +19,7 @@ public:
 
 private:
     int badgeNumber;
-    double litresOfFuel;
+    float litresOfFuel;
 };
 
 #endif // FORD_H
